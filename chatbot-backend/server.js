@@ -40,12 +40,7 @@ const PRODUCT_LINKS = `
 - Outdoor Living: outdoor-living.html
 - Marketplace: marketplace.html
 // VISUAL INSPIRATION MAP
-const PRODUCT_IMAGES = `
-    - Deck: designer_kitchen_inspiration_1770072370538.png
-- Kitchen: designer_kitchen_inspiration_1770072370538.png
-    - Warehouse: industrial_warehouse_inspiration_1770072383338.png
-        - Patio: modern_deck_inspiration_1770072358780.png
-`;
+const PRODUCT_IMAGES = "\\n- Deck: designer_kitchen_inspiration_1770072370538.png\\n- Kitchen: designer_kitchen_inspiration_1770072370538.png\\n- Warehouse: industrial_warehouse_inspiration_1770072383338.png\\n- Patio: modern_deck_inspiration_1770072358780.png\\n";
 
 // PHASE 5 SYSTEM PROMPT - Product-First AECI Consultant
 const SYSTEM_PROMPT = `You are Brandon, ScieNatu's expert AECI product consultant. 
