@@ -1,0 +1,431 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search results for ScieNatu Global Technologies">
+  <title>Search Results | ScieNatu Global Technologies</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- TOP BAR (Phone, Account, Search) -->
+  <div class="top-bar">
+    <div class="top-bar-container">
+      <a href="tel:555-555-5555" class="top-bar-item">
+        <i class="fas fa-headset"></i>
+        <span>Support: 555-555-5555</span>
+      </a>
+
+      <a href="vendor.html" class="top-bar-item">
+        <i class="fas fa-store"></i>
+        <span>Sell on ScieNatu</span>
+      </a>
+
+      <a href="account.html" class="top-bar-item">
+        <i class="fas fa-user-circle"></i>
+        <span>Sign In / Register</span>
+      </a>
+
+      <form class="search-form" action="search.html" method="GET">
+        <i class="fas fa-search"></i>
+        <input type="search" name="q" class="search-input" placeholder="Search for products..." aria-label="Search"
+          autocomplete="off">
+      </form>
+    </div>
+  </div>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-text">
+          <div>
+            <span class="logo-sci">Scie</span><span class="logo-natu">Natu</span>
+          </div>
+          <div class="logo-tagline">The AECI Marketplace</div>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li class="dropdown">
+            <a href="marketplace.html" class="nav-link active"><i class="fas fa-shopping-bag"></i> Shopping <i
+                class="fas fa-caret-down" style="margin-left: 4px; font-size: 0.6em;"></i></a>
+            <ul class="dropdown-content">
+
+              <!-- 1. Building Materials -->
+              <li class="dropdown-submenu">
+                <a href="building-materials.html">Building Materials</a>
+                <ul class="dropdown-menu">
+                  <li><a href="lumber.html">Lumber</a></li>
+                  <li><a href="decking.html">Decking</a></li>
+                  <li><a href="fencing.html">Fencing</a></li>
+                  <li><a href="flooring.html">Flooring</a></li>
+                  <li><a href="windows.html">Windows</a></li>
+                  <li><a href="doors.html">Doors</a></li>
+                  <li><a href="paint.html">Paint</a></li>
+                  <li><a href="hardware.html">Hardware</a></li>
+                </ul>
+              </li>
+
+              <!-- 2. Tools & Systems -->
+              <li class="dropdown-submenu">
+                <a href="tools-systems.html">Tools & Systems</a>
+                <ul class="dropdown-menu">
+                  <li><a href="tools.html">Tools</a></li>
+                  <li><a href="outdoor-power.html">Outdoor Power Equipment</a></li>
+                  <li><a href="electrical.html">Electrical</a></li>
+                  <li><a href="heating-hvac.html">Heating & HVAC</a></li>
+                </ul>
+              </li>
+
+              <!-- 3. Kitchen, Bath & More -->
+              <li class="dropdown-submenu">
+                <a href="kitchen-bath.html">Kitchen & Bath</a>
+                <ul class="dropdown-menu">
+                  <li><a href="kitchen.html">Kitchen</a></li>
+                  <li><a href="bath.html">Bath</a></li>
+                  <li><a href="plumbing.html">Plumbing</a></li>
+                  <li><a href="appliances.html">Appliances</a></li>
+                  <li><a href="lighting.html">Lighting & Ceiling Fans</a></li>
+                </ul>
+              </li>
+
+              <!-- 4. Home & Decor -->
+              <li class="dropdown-submenu">
+                <a href="home-decor.html">Home & Decor</a>
+                <ul class="dropdown-menu">
+                  <li><a href="furniture-home.html">Furniture & Home</a></li>
+                  <li><a href="window-treatments.html">Window Treatments</a></li>
+                  <li><a href="storage.html">Storage & Organization</a></li>
+                  <li><a href="clothing.html">Clothing</a></li>
+                </ul>
+              </li>
+
+              <!-- 5. Outdoor Living -->
+              <li class="dropdown-submenu">
+                <a href="outdoor-living.html">Outdoor Living</a>
+                <ul class="dropdown-menu">
+                  <li><a href="outdoors.html">Outdoors</a></li>
+                  <li><a href="patio-furniture.html">Patio Furniture</a></li>
+                </ul>
+              </li>
+
+              <li><a href="sale.html" style="color: var(--patriot-red); font-weight: bold;">Sale Items</a></li>
+            </ul>
+          </li>
+          <li><a href="vendor.html" class="nav-link"><i class="fas fa-store"></i> Selling</a></li>
+          <li><a href="deals.html" class="nav-link"><i class="fas fa-tag"></i> Daily Deals</a></li>
+          <li class="dropdown">
+            <a href="brands.html" class="nav-link"><i class="fas fa-star"></i> Top Brands <i class="fas fa-caret-down"
+                style="margin-left: 4px; font-size: 0.6em;"></i></a>
+            <ul class="dropdown-content">
+              <li><a href="#">Example Brand #1</a></li>
+              <li><a href="#">Example Brand #2</a></li>
+              <li><a href="#">Example Brand #3</a></li>
+              <li><a href="#">Example Brand #4</a></li>
+              <li><a href="#">Example Brand #5</a></li>
+              <li><a href="#">Example Brand #6</a></li>
+            </ul>
+          </li>
+          <li><a href="reviews.html" class="nav-link"><i class="fas fa-comments"></i> Customer Reviews</a></li>
+          <li><a href="diy-guide.html" class="nav-link" style="color: white; font-weight: 700;"><i
+                class="fas fa-tools"></i> DIY Guide</a></li>
+          <li><a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i> View Cart</a></li>
+          <li><a href="support.html" class="nav-link"><i class="fas fa-question-circle"></i> Help & Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="section bg-offwhite" style="min-height: 60vh;">
+    <div class="container">
+      <h1 class="mb-lg">Search Results</h1>
+
+      <div id="search-query-display" class="mb-xl text-large text-grey">
+        Showing results for: <span id="search-term" style="font-weight: 700; color: var(--navy-blue);">...</span>
+      </div>
+
+      <div id="search-results-container" class="grid grid-1" style="max-width: 800px;">
+        <!-- Results will be injected here -->
+        <div class="text-center p-xl">
+          <i class="fas fa-spinner fa-spin fa-2x text-grey"></i>
+        </div>
+      </div>
+
+      <div id="no-results" style="display: none; text-align: center; padding: 40px;">
+        <i class="fas fa-search" style="font-size: 3rem; color: #ddd; margin-bottom: 20px;"></i>
+        <h3>No results found</h3>
+        <p class="text-grey">Try adjusting your search terms or check our <a href="services.html"
+            class="text-red">Services</a> page.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-column">
+          <h3>ScieNatu</h3>
+          <p style="color: var(--silver-light); margin-bottom: var(--space-md);">
+            American-made AECI solutions with tech-forward innovation.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Company</h3>
+          <div class="footer-links">
+            <a href="locations.html" class="footer-link">Locations</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ScieNatu Global Technologies. All rights reserved. | Made in America 🇺🇸</p>
+      </div>
+    </div>
+  </footer>
+
+        <!-- CHATBOT -->
+  <div class="chatbot-container" id="chatbot-container">
+    <div class="chatbot-header">
+      <div class="chatbot-title">
+        <span style="color: var(--patriot-red); font-weight: 800;">Scie</span><span style="color: var(--navy-blue); font-weight: 800;">Natu</span> <span style="color: #888; font-weight: 400;">Team</span>
+      </div>
+      <div class="chatbot-header-actions">
+        <div class="chatbot-menu-container">
+          <button class="chatbot-menu-toggle" id="chatbot-menu-toggle" aria-label="Chat menu">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <div class="chatbot-menu" id="chatbot-menu">
+            <button id="chatbot-opt-survey">Begin Survey</button>
+            <button id="chatbot-opt-resume">Resume Chat</button>
+            <button id="chatbot-opt-reset">Close & Reset Chat</button>
+          </div>
+        </div>
+        <button class="chatbot-close" id="chatbot-close" aria-label="Close chat"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages">
+      <!-- Messages will appear here -->
+    </div>
+    <div class="chatbot-input-area">
+      <input type="text" id="chatbot-input" placeholder="Type a message..." aria-label="Chat input">
+      <button id="chatbot-send" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+    </div>
+    <div class="chatbot-footer">
+      <a href="tel:555-555-5555" class="chatbot-call-btn"><i class="fas fa-phone-alt"></i> Call Us Directly</a>
+    </div>
+  </div>
+
+  <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Open chat">
+    <i class="fas fa-comment-dots"></i>
+  </button>
+  <!-- /CHATBOT -->
+  <script src="scripts.js"></script>`r`n  <script src="chatbot-ai.js"></script>
+  <script>
+    // Inline script to handle search immediately on page load
+    document.addEventListener('DOMContentLoaded', function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const query = urlParams.get('q');
+      const resultsContainer = document.getElementById('search-results-container');
+      const searchTermDisplay = document.getElementById('search-term');
+      const noResults = document.getElementById('no-results');
+
+      if (query) {
+        // Levenshtein Distance
+        const levenshtein = (a, b) => {
+          const matrix = [];
+          for (let i = 0; i <= b.length; i++) { matrix[i] = [i]; }
+          for (let j = 0; j <= a.length; j++) { matrix[0][j] = j; }
+          for (let i = 1; i <= b.length; i++) {
+            for (let j = 1; j <= a.length; j++) {
+              if (b.charAt(i - 1) == a.charAt(j - 1)) {
+                matrix[i][j] = matrix[i - 1][j - 1];
+              } else {
+                matrix[i][j] = Math.min(matrix[i - 1][j - 1] + 1, Math.min(matrix[i][j - 1] + 1, matrix[i - 1][j] + 1));
+              }
+            }
+          }
+          return matrix[b.length][a.length];
+        };
+
+        // 1. Build Dictionary from Data
+        const dictionary = new Set();
+        siteSearchData.forEach(item => {
+          const words = (item.title + " " + item.keywords).toLowerCase().split(/\s+/);
+          words.forEach(w => {
+            if (w.length > 2) dictionary.add(w.replace(/[^\w]/g, '')); // Clean punctuation
+          });
+        });
+        const wordList = Array.from(dictionary);
+
+        // 2. Correct the Query
+        const inputWords = query.toLowerCase().split(/\s+/);
+        let correctedWords = [];
+        let wasCorrected = false;
+
+        inputWords.forEach(inWord => {
+          const cleanWord = inWord.replace(/[^\w]/g, '');
+          if (cleanWord.length < 3) {
+            correctedWords.push(inWord); // Keep short words/numbers as is
+            return;
+          }
+
+          if (dictionary.has(cleanWord)) {
+            correctedWords.push(inWord);
+            return;
+          }
+
+          // Find best match in dictionary
+          let bestDist = 100;
+          let bestWord = inWord;
+
+          wordList.forEach(dictWord => {
+            const dist = levenshtein(cleanWord, dictWord);
+            // Threshold based on length
+            const threshold = cleanWord.length > 5 ? 3 : 2;
+            if (dist < bestDist && dist < threshold) {
+              bestDist = dist;
+              bestWord = dictWord;
+            }
+          });
+
+          if (bestWord !== inWord) wasCorrected = true;
+          correctedWords.push(bestWord);
+        });
+
+        const effectiveQuery = correctedWords.join(" ");
+        const originalQuery = query;
+
+        // 3. Update UI
+        if (wasCorrected) {
+          searchTermDisplay.innerHTML = `${effectiveQuery}`;
+          const correctionNotice = document.createElement('div');
+          correctionNotice.className = 'correction-notice p-md mb-lg bg-offwhite';
+          correctionNotice.style.borderLeft = "4px solid var(--patriot-red)";
+          correctionNotice.innerHTML = `
+             <p class="mb-xs" style="color: #666; font-size: 0.95em;">Showing results for <b style="color: var(--navy-blue);">${effectiveQuery}</b></p>
+             <p class="mb-0" style="font-size: 0.9em;">Search instead for <a href="search.html?q=${encodeURIComponent(originalQuery)}" style="color: var(--patriot-red); text-decoration: underline;">${originalQuery}</a></p>
+          `;
+          // Insert after header
+          const header = document.querySelector('.container > h1');
+          header.insertAdjacentElement('afterend', correctionNotice);
+          // Hide default display to avoid clutter
+          document.getElementById('search-query-display').style.display = 'none';
+        } else {
+          searchTermDisplay.textContent = originalQuery;
+        }
+
+        // 4. Perform Search (on effectiveQuery)
+        // Score logic matches ANY word in text
+        const getScore = (item, q) => {
+          const text = (item.title + " " + item.keywords).toLowerCase();
+          const qWords = q.split(" ");
+
+          // Count word matches
+          let score = 0;
+          qWords.forEach(qw => {
+            if (text.includes(qw)) score -= 10; // Bonus for match
+          });
+
+          // Tie breaker: string distance if no matches
+          if (score === 0) {
+            const dist = levenshtein(text, q);
+            score = dist;
+          }
+          return score;
+        };
+
+        // 5. Result Rendering
+        const getIcon = (item) => {
+          const text = (item.title + " " + item.keywords).toLowerCase();
+          if (text.includes("tool") || text.includes("drill")) return "fa-tools";
+          if (text.includes("door") || text.includes("window")) return "fa-door-open";
+          if (text.includes("bath") || text.includes("plumb")) return "fa-bath";
+          if (text.includes("electric") || text.includes("light")) return "fa-bolt";
+          if (text.includes("garden") || text.includes("outdoor")) return "fa-leaf";
+          if (text.includes("home") || text.includes("furnit")) return "fa-couch";
+          if (text.includes("kitchen")) return "fa-utensils";
+          if (text.includes("paint")) return "fa-paint-roller";
+          if (text.includes("lumber") || text.includes("wood")) return "fa-tree";
+          return "fa-box";
+        };
+
+        const highlightText = (text, query) => {
+          if (!query) return text;
+          const words = query.split(" ").filter(w => w.length > 2);
+          if (words.length === 0) return text;
+
+          let highlighted = text;
+          words.forEach(w => {
+            const regex = new RegExp(`(${w})`, 'gi');
+            highlighted = highlighted.replace(regex, '<span style="background: #fff3cd; font-weight: bold;">$1</span>');
+          });
+          return highlighted;
+        };
+
+        const results = siteSearchData
+          .map(item => ({ ...item, score: getScore(item, effectiveQuery) }))
+          .filter(item => item.score < 50) // Filter loose matches
+          .sort((a, b) => a.score - b.score);
+
+        if (results.length > 0) {
+          resultsContainer.innerHTML = '';
+          results.forEach(item => {
+            const iconClass = getIcon(item);
+            const desc = "Shop for " + item.title.toLowerCase() + " and related items.";
+            const highlightedDesc = highlightText(desc, effectiveQuery);
+            const highlightedTitle = highlightText(item.title, effectiveQuery);
+
+            const resultCard = document.createElement('div');
+            resultCard.className = 'search-result-card';
+            resultCard.style = "background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); margin-bottom: 20px; display: flex; gap: 20px; align-items: start; transition: transform 0.2s;";
+            resultCard.innerHTML = `
+                  <div style="background: var(--off-white); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                    <i class="fas ${iconClass}" style="font-size: 1.5rem; color: var(--navy-blue);"></i>
+                  </div>
+                  <div style="flex: 1;">
+                      <h3 style="margin-bottom: 8px; margin-top: 0;"><a href="${item.url}" style="color: var(--navy-blue); text-decoration: none;">${highlightedTitle}</a></h3>
+                      <p style="color: #666; margin-bottom: 12px; line-height: 1.5;">${highlightedDesc}</p>
+                      <a href="${item.url}" style="color: var(--patriot-red); font-weight: 600; font-size: 0.9em;">View Page <i class="fas fa-arrow-right" style="font-size: 0.8em; margin-left: 4px;"></i></a>
+                  </div>
+            `;
+            // Add hover effect via JS since inline styles are tricky for pseudo-classes
+            resultCard.onmouseover = () => resultCard.style.transform = 'translateY(-2px) box-shadow(0 4px 12px rgba(0,0,0,0.1))';
+            resultCard.onmouseout = () => resultCard.style.transform = 'none';
+
+            resultsContainer.appendChild(resultCard);
+          });
+        } else {
+          resultsContainer.style.display = 'none';
+          noResults.style.display = 'block';
+          if (wasCorrected) {
+            noResults.querySelector('h3').textContent = `No results for "${effectiveQuery}"`;
+          }
+        }
+
+      } else {
+        searchTermDisplay.textContent = 'All';
+        resultsContainer.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+
+</html>
+
+

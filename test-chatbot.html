@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chatbot Connection Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        button {
+            background: #0066cc;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #0052a3;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            min-height: 100px;
+            border: 1px solid #ddd;
+        }
+
+        .success {
+            color: #2e7d32;
+            font-weight: bold;
+            background: #e8f5e9 !important;
+            border-color: #a5d6a7 !important;
+        }
+
+        .error {
+            color: #c62828;
+            font-weight: bold;
+            background: #ffebee !important;
+            border-color: #ef9a9a !important;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .status-box {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🔍 Chatbot Connection Test</h1>
+    <div class="status-box">Use this page to verify your API and Backend are connected.</div>
+
+    <button onclick="testHealth()">1. Test Backend Health (Check if server is running)</button>
+    <button onclick="testChatAPI()">2. Test Chat API (Check AI connection)</button>
+    <button onclick="testFullConversation()">3. Test Full Conversation (Simulate DIY Planning)</button>
+
+    <div id="result">Results will appear here...</div>
+
+    <script>
+        const BACKEND_URL = 'http://localhost:3000';
+
+        function showResult(message, isError = false) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerText = message;
+            resultDiv.className = isError ? 'error' : 'success';
+        }
+
+        async function testHealth() {
+            showResult('Testing backend health...');
+            try {
+                const response = await fetch(`${BACKEND_URL}/health`);
+                const data = await response.json();
+                showResult(`✅ SUCCESS!\n\nBackend is running!\nResponse: ${JSON.stringify(data, null, 2)}`);
+            } catch (error) {
+                showResult(`❌ FAILED!\n\nError: ${error.message}\n\nThe backend server is NOT responding on port 3000.`, true);
+            }
+        }
+
+        async function testChatAPI() {
+            showResult('Testing chat API (sending "Hello")...');
+            try {
+                const response = await fetch(`${BACKEND_URL}/api/chat`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: 'Hello, are you working?' })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    showResult(`✅ SUCCESS!\n\nAI Responded:\n"${data.message}"`);
+                } else {
+                    showResult(`❌ FAILED!\n\nServer Error: ${data.error || 'Unknown error'}\nDetails: ${data.details || 'No details'}`, true);
+                }
+            } catch (error) {
+                showResult(`❌ CONNECTION FAILED!\n\nError: ${error.message}`, true);
+            }
+        }
+
+        async function testFullConversation() {
+            showResult('Simulating DIY conversation (sending "I want to build a deck")...');
+            try {
+                const response = await fetch(`${BACKEND_URL}/api/chat`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: 'I want to build a deck', sessionId: null })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    showResult(`✅ SUCCESS!\n\nAI Project Response:\n"${data.message}"\n\n🎉 The AI is correctly handling project requests!`);
+                } else {
+                    showResult(`❌ FAILED!\n\nServer Error: ${data.error || 'Unknown error'}`, true);
+                }
+            } catch (error) {
+                showResult(`❌ CONNECTION FAILED!\n\nError: ${error.message}`, true);
+            }
+        }
+    </script>
+      <!-- CHATBOT -->
+  <div class="chatbot-container" id="chatbot-container">
+    <div class="chatbot-header">
+      <div class="chatbot-title">
+        <span style="color: var(--patriot-red); font-weight: 800;">Scie</span><span style="color: var(--navy-blue); font-weight: 800;">Natu</span> <span style="color: #888; font-weight: 400;">Team</span>
+      </div>
+      <div class="chatbot-header-actions">
+        <div class="chatbot-menu-container">
+          <button class="chatbot-menu-toggle" id="chatbot-menu-toggle" aria-label="Chat menu">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <div class="chatbot-menu" id="chatbot-menu">
+            <button id="chatbot-opt-survey">Begin Survey</button>
+            <button id="chatbot-opt-resume">Resume Chat</button>
+            <button id="chatbot-opt-reset">Close & Reset Chat</button>
+          </div>
+        </div>
+        <button class="chatbot-close" id="chatbot-close" aria-label="Close chat"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages">
+      <!-- Messages will appear here -->
+    </div>
+    <div class="chatbot-input-area">
+      <input type="text" id="chatbot-input" placeholder="Type a message..." aria-label="Chat input">
+      <button id="chatbot-send" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+    </div>
+    <div class="chatbot-footer">
+      <a href="tel:555-555-5555" class="chatbot-call-btn"><i class="fas fa-phone-alt"></i> Call Us Directly</a>
+    </div>
+  </div>
+
+  <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Open chat">
+    <i class="fas fa-comment-dots"></i>
+  </button>
+  <!-- /CHATBOT -->
+  <script src="scripts.js"></script>
+</body>
+
+</html>
+
+

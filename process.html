@@ -1,0 +1,500 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ScieNatu's AECI process - transparent, collaborative, and excellence-driven project delivery.">
+    <title>Our Process | ScieNatu Global Technologies</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .process-step {
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            background: white;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            margin-bottom: var(--space-xl);
+        }
+
+        .process-number {
+            position: absolute;
+            top: -20px;
+            left: var(--space-lg);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--patriot-red);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            font-weight: 700;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .process-step:nth-child(even) .process-number {
+            background: var(--navy-blue);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP BAR (Phone, Account, Search) -->
+  <div class="top-bar">
+    <div class="top-bar-container">
+      <a href="tel:555-555-5555" class="top-bar-item">
+        <i class="fas fa-headset"></i>
+        <span>Support: 555-555-5555</span>
+      </a>
+
+      <a href="vendor.html" class="top-bar-item">
+        <i class="fas fa-store"></i>
+        <span>Sell on ScieNatu</span>
+      </a>
+
+      <a href="account.html" class="top-bar-item">
+        <i class="fas fa-user-circle"></i>
+        <span>Sign In / Register</span>
+      </a>
+
+      <form class="search-form" action="search.html" method="GET">
+        <i class="fas fa-search"></i>
+        <input type="search" name="q" class="search-input" placeholder="Search for products..." aria-label="Search"
+          autocomplete="off">
+      </form>
+    </div>
+  </div>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-text">
+          <div>
+            <span class="logo-sci">Scie</span><span class="logo-natu">Natu</span>
+          </div>
+          <div class="logo-tagline">The AECI Marketplace</div>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li class="dropdown">
+            <a href="marketplace.html" class="nav-link active"><i class="fas fa-shopping-bag"></i> Shopping <i
+                class="fas fa-caret-down" style="margin-left: 4px; font-size: 0.6em;"></i></a>
+            <ul class="dropdown-content">
+
+              <!-- 1. Building Materials -->
+              <li class="dropdown-submenu">
+                <a href="building-materials.html">Building Materials</a>
+                <ul class="dropdown-menu">
+                  <li><a href="lumber.html">Lumber</a></li>
+                  <li><a href="decking.html">Decking</a></li>
+                  <li><a href="fencing.html">Fencing</a></li>
+                  <li><a href="flooring.html">Flooring</a></li>
+                  <li><a href="windows.html">Windows</a></li>
+                  <li><a href="doors.html">Doors</a></li>
+                  <li><a href="paint.html">Paint</a></li>
+                  <li><a href="hardware.html">Hardware</a></li>
+                </ul>
+              </li>
+
+              <!-- 2. Tools & Systems -->
+              <li class="dropdown-submenu">
+                <a href="tools-systems.html">Tools & Systems</a>
+                <ul class="dropdown-menu">
+                  <li><a href="tools.html">Tools</a></li>
+                  <li><a href="outdoor-power.html">Outdoor Power Equipment</a></li>
+                  <li><a href="electrical.html">Electrical</a></li>
+                  <li><a href="heating-hvac.html">Heating & HVAC</a></li>
+                </ul>
+              </li>
+
+              <!-- 3. Kitchen, Bath & More -->
+              <li class="dropdown-submenu">
+                <a href="kitchen-bath.html">Kitchen & Bath</a>
+                <ul class="dropdown-menu">
+                  <li><a href="kitchen.html">Kitchen</a></li>
+                  <li><a href="bath.html">Bath</a></li>
+                  <li><a href="plumbing.html">Plumbing</a></li>
+                  <li><a href="appliances.html">Appliances</a></li>
+                  <li><a href="lighting.html">Lighting & Ceiling Fans</a></li>
+                </ul>
+              </li>
+
+              <!-- 4. Home & Decor -->
+              <li class="dropdown-submenu">
+                <a href="home-decor.html">Home & Decor</a>
+                <ul class="dropdown-menu">
+                  <li><a href="furniture-home.html">Furniture & Home</a></li>
+                  <li><a href="window-treatments.html">Window Treatments</a></li>
+                  <li><a href="storage.html">Storage & Organization</a></li>
+                  <li><a href="clothing.html">Clothing</a></li>
+                </ul>
+              </li>
+
+              <!-- 5. Outdoor Living -->
+              <li class="dropdown-submenu">
+                <a href="outdoor-living.html">Outdoor Living</a>
+                <ul class="dropdown-menu">
+                  <li><a href="outdoors.html">Outdoors</a></li>
+                  <li><a href="patio-furniture.html">Patio Furniture</a></li>
+                </ul>
+              </li>
+
+              <li><a href="sale.html" style="color: var(--patriot-red); font-weight: bold;">Sale Items</a></li>
+            </ul>
+          </li>
+          <li><a href="vendor.html" class="nav-link"><i class="fas fa-store"></i> Selling</a></li>
+          <li><a href="deals.html" class="nav-link"><i class="fas fa-tag"></i> Daily Deals</a></li>
+          <li class="dropdown">
+            <a href="brands.html" class="nav-link"><i class="fas fa-star"></i> Top Brands <i class="fas fa-caret-down"
+                style="margin-left: 4px; font-size: 0.6em;"></i></a>
+            <ul class="dropdown-content">
+              <li><a href="#">Example Brand #1</a></li>
+              <li><a href="#">Example Brand #2</a></li>
+              <li><a href="#">Example Brand #3</a></li>
+              <li><a href="#">Example Brand #4</a></li>
+              <li><a href="#">Example Brand #5</a></li>
+              <li><a href="#">Example Brand #6</a></li>
+            </ul>
+          </li>
+          <li><a href="reviews.html" class="nav-link"><i class="fas fa-comments"></i> Customer Reviews</a></li>
+          <li><a href="diy-guide.html" class="nav-link" style="color: white; font-weight: 700;"><i
+                class="fas fa-tools"></i> DIY Guide</a></li>
+          <li><a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i> View Cart</a></li>
+          <li><a href="support.html" class="nav-link"><i class="fas fa-question-circle"></i> Help & Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+    <!-- PAGE HERO -->
+    <section style="background: var(--navy-blue); padding: var(--space-3xl) 0; text-align: center;">
+        <div class="container">
+            <h1 style="color: white; font-size: 3rem; margin-bottom: var(--space-md);">
+                Our <span style="color: var(--patriot-red);">Process</span>
+            </h1>
+            <p style="color: white; font-size: 1.25rem; max-width: 800px; margin: 0 auto;">
+                Transparent, Collaborative, Excellence-Driven Project Delivery
+            </p>
+        </div>
+    </section>
+
+    <!-- PROCESS OVERVIEW -->
+    <section class="section bg-offwhite">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2>How We Work</h2>
+                <p style="font-size: 1.125rem; max-width: 700px; margin: 0 auto;">
+                    Our proven 7-step process ensures every project is delivered on time, on budget, and exceeds
+                    expectations
+                </p>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <!-- Step 1 -->
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h3 style="color: var(--navy-blue); margin-bottom: var(--space-md); padding-top: var(--space-md);">
+                        Initial Consultation</h3>
+                    <p style="font-size: 1.0625rem; line-height: 1.8;">
+                        We begin with a comprehensive consultation to understand your vision, goals, budget, and
+                        timeline. Our team will assess your project requirements across all AECI disciplines and
+                        sectors.
+                    </p>
+                    <ul
+                        style="list-style: disc; margin-left: var(--space-xl); margin-top: var(--space-md); line-height: 2;">
+                        <li>Free initial consultation</li>
+                        <li>Site assessment and analysis</li>
+                        <li>Needs and goals discussion</li>
+                        <li>Budget and timeline review</li>
+                    </ul>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h3 style="color: var(--navy-blue); margin-bottom: var(--space-md); padding-top: var(--space-md);">
+                        Design & Planning</h3>
+                    <p style="font-size: 1.0625rem; line-height: 1.8;">
+                        Our architecture and engineering teams collaborate to create detailed designs and plans. We
+                        utilize cutting-edge technology including BIM, 3D visualization, and robotics simulation.
+                    </p>
+                    <ul
+                        style="list-style: disc; margin-left: var(--space-xl); margin-top: var(--space-md); line-height: 2;">
+                        <li>Conceptual design development</li>
+                        <li>3D modeling and visualization</li>
+                        <li>Engineering calculations</li>
+                        <li>Technology integration planning</li>
+                    </ul>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h3 style="color: var(--navy-blue); margin-bottom: var(--space-md); padding-top: var(--space-md);">
+                        Permitting & Approvals</h3>
+                    <p style="font-size: 1.0625rem; line-height: 1.8;">
+                        We handle all permitting, zoning approvals, and regulatory compliance. Our team manages HOA
+                        approvals, building permits, and all necessary documentation.
+                    </p>
+                    <ul
+                        style="list-style: disc; margin-left: var(--space-xl); margin-top: var(--space-md); line-height: 2;">
+                        <li>Building permit applications</li>
+                        <li>HOA and zoning approvals</li>
+                        <li>Code compliance verification</li>
+                        <li>Documentation preparation</li>
+                    </ul>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h3 style="color: var(--navy-blue); margin-bottom: var(--space-md); padding-top: var(--space-md);">
+                        Pre-Construction</h3>
+                    <p style="font-size: 1.0625rem; line-height: 1.8;">
+                        Before breaking ground, we finalize all details including material selection, subcontractor
+                        coordination, and project scheduling. We can connect you with our marketplace for materials.
+                    </p>
+                    <ul
+                        style="list-style: disc; margin-left: var(--space-xl); margin-top: var(--space-md); line-height: 2;">
+                        <li>Material procurement</li>
+                        <li>Subcontractor coordination</li>
+                        <li>Detailed scheduling</li>
+                        <li>Site preparation planning</li>
+                    </ul>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="process-step">
+                    <div class="process-number">5</div>
+                    <h3 style="color: var(--navy-blue); margin-bottom: var(--space-md); padding-top: var(--space-md);">
+                        Construction & Execution</h3>
+                    <p style="font-size: 1.0625rem; line-height: 1.8;">
+                        Our experienced construction teams bring your project to life with superior craftsmanship,
+                        robotics-enhanced precision, and rigorous quality control at every phase.
+                    </p>
+                    <ul
+                        style="list-style: disc; margin-left: var(--space-xl); margin-top: var(--space-md); line-height: 2;">
+                        <li>Daily quality inspections</li>
+                        <li>Regular progress updates</li>
+                        <li>Technology-enhanced construction</li>
+                        <li>Safety protocol enforcement</li>
+                    </ul>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="process-step">
+                    <div class="process-number">6</div>
+                    <h3 style="color: var(--navy-blue); margin-bottom: var(--space-md); padding-top: var(--space-md);">
+                        Inspection & Quality Assurance</h3>
+                    <p style="font-size: 1.0625rem; line-height: 1.8;">
+                        We conduct thorough inspections and address any issues before final completion. Our quality
+                        assurance process ensures every detail meets our high standards.
+                    </p>
+                    <ul
+                        style="list-style: disc; margin-left: var(--space-xl); margin-top: var(--space-md); line-height: 2;">
+                        <li>Comprehensive inspections</li>
+                        <li>Punch list completion</li>
+                        <li>Code compliance verification</li>
+                        <li>Final walkthrough preparation</li>
+                    </ul>
+                </div>
+
+                <!-- Step 7 -->
+                <div class="process-step">
+                    <div class="process-number">7</div>
+                    <h3 style="color: var(--navy-blue); margin-bottom: var(--space-md); padding-top: var(--space-md);">
+                        Project Completion & Support</h3>
+                    <p style="font-size: 1.0625rem; line-height: 1.8;">
+                        We deliver your completed project with full documentation, warranties, and ongoing support. Our
+                        commitment to your satisfaction doesn't end at completion.
+                    </p>
+                    <ul
+                        style="list-style: disc; margin-left: var(--space-xl); margin-top: var(--space-md); line-height: 2;">
+                        <li>Final walkthrough and approval</li>
+                        <li>Complete documentation delivery</li>
+                        <li>Warranty information</li>
+                        <li>Ongoing maintenance support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEY DIFFERENTIATORS -->
+    <section class="section bg-navy">
+        <div class="container">
+            <h2 class="text-center mb-xl">What Sets Us Apart</h2>
+
+            <div class="grid grid-3">
+                <div style="text-align: center;">
+                    <i class="fas fa-handshake"
+                        style="font-size: 3.5rem; color: var(--patriot-red); margin-bottom: var(--space-md);"></i>
+                    <h4 style="color: white; margin-bottom: var(--space-sm);">Complete Transparency</h4>
+                    <p style="color: var(--silver-light);">No surprise costs or hidden fees. Open communication every
+                        step of the way.</p>
+                </div>
+
+                <div style="text-align: center;">
+                    <i class="fas fa-robot"
+                        style="font-size: 3.5rem; color: var(--gold); margin-bottom: var(--space-md);"></i>
+                    <h4 style="color: white; margin-bottom: var(--space-sm);">Technology Integration</h4>
+                    <p style="color: var(--silver-light);">Robotics, software, and innovation enhancing traditional
+                        craftsmanship.</p>
+                </div>
+
+                <div style="text-align: center;">
+                    <i class="fas fa-flag-usa"
+                        style="font-size: 3.5rem; color: var(--patriot-red); margin-bottom: var(--space-md);"></i>
+                    <h4 style="color: white; margin-bottom: var(--space-sm);">American Made</h4>
+                    <p style="color: var(--silver-light);">Proudly supporting American workers, materials, and
+                        manufacturing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section bg-offwhite">
+        <div class="container text-center">
+            <h2 class="mb-md">Ready to Experience the ScieNatu Difference?</h2>
+            <p class="mb-xl" style="font-size: 1.25rem;">Let's start your project with a free consultation</p>
+            <div class="flex-center gap-md">
+                <a href="quote.html" class="btn btn-primary btn-lg">Get Free Quote</a>
+                <a href="schedule.html" class="btn btn-secondary btn-lg">Schedule Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <h3>ScieNatu</h3>
+                    <p style="color: var(--silver-light); margin-bottom: var(--space-md);">American-made AECI solutions
+                        with tech-forward innovation.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <div class="footer-links">
+                        <a href="services.html#architecture" class="footer-link">Architecture</a>
+                        <a href="services.html#engineering" class="footer-link">Engineering</a>
+                        <a href="services.html#construction" class="footer-link">Construction</a>
+                        <a href="services.html#infrastructure" class="footer-link">Infrastructure</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <div class="footer-links">
+                        <a href="process.html" class="footer-link">Our Process</a>
+                        <a href="locations.html" class="footer-link">Locations</a>
+                        <a href="financing.html" class="footer-link">Financing Options</a>
+                        <a href="schedule.html" class="footer-link">Schedule Online</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <div class="footer-links">
+                        <a href="projects.html" class="footer-link">Recent Projects</a>
+                        <a href="gallery.html" class="footer-link">Gallery</a>
+                        <a href="marketplace.html" class="footer-link">Marketplace</a>
+                        <a href="quote.html" class="footer-link">Get Free Quote</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ScieNatu Global Technologies. All rights reserved. | Made in America 🇺🇸</p>
+            </div>
+        </div>
+    </footer>
+
+            <!-- CHATBOT -->
+  <div class="chatbot-container" id="chatbot-container">
+    <div class="chatbot-header">
+      <div class="chatbot-title">
+        <span style="color: var(--patriot-red); font-weight: 800;">Scie</span><span style="color: var(--navy-blue); font-weight: 800;">Natu</span> <span style="color: #888; font-weight: 400;">Team</span>
+      </div>
+      <div class="chatbot-header-actions">
+        <div class="chatbot-menu-container">
+          <button class="chatbot-menu-toggle" id="chatbot-menu-toggle" aria-label="Chat menu">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <div class="chatbot-menu" id="chatbot-menu">
+            <button id="chatbot-opt-survey">Begin Survey</button>
+            <button id="chatbot-opt-resume">Resume Chat</button>
+            <button id="chatbot-opt-reset">Close & Reset Chat</button>
+          </div>
+        </div>
+        <button class="chatbot-close" id="chatbot-close" aria-label="Close chat"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages">
+      <!-- Messages will appear here -->
+    </div>
+    <div class="chatbot-input-area">
+      <input type="text" id="chatbot-input" placeholder="Type a message..." aria-label="Chat input">
+      <button id="chatbot-send" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+    </div>
+    <div class="chatbot-footer">
+      <a href="tel:555-555-5555" class="chatbot-call-btn"><i class="fas fa-phone-alt"></i> Call Us Directly</a>
+    </div>
+  </div>
+
+  <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Open chat">
+    <i class="fas fa-comment-dots"></i>
+  </button>
+  <!-- /CHATBOT -->
+  <script src="scripts.js"></script>`r`n  <script src="chatbot-ai.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

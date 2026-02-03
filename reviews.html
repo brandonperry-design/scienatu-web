@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ScieNatu Customer Reviews - Trusted by AECI professionals worldwide.">
+  <title>Customer Reviews | ScieNatu Global Technologies</title>
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    .review-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      box-shadow: var(--shadow-md);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+
+    .review-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .stars {
+      color: var(--gold);
+      margin-bottom: var(--space-md);
+      font-size: 0.9em;
+    }
+
+    .review-text {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: var(--navy-blue);
+      font-style: italic;
+      margin-bottom: var(--space-lg);
+    }
+
+    .reviewer-info {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+    }
+
+    .reviewer-avatar {
+      width: 50px;
+      height: 50px;
+      background: var(--silver-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .reviewer-name {
+      font-weight: 700;
+      color: var(--navy-blue);
+      margin: 0;
+    }
+
+    .reviewer-title {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR (Phone, Account, Search) -->
+  <div class="top-bar">
+    <div class="top-bar-container">
+      <a href="tel:555-555-5555" class="top-bar-item">
+        <i class="fas fa-headset"></i>
+        <span>Support: 555-555-5555</span>
+      </a>
+
+      <a href="vendor.html" class="top-bar-item">
+        <i class="fas fa-store"></i>
+        <span>Sell on ScieNatu</span>
+      </a>
+
+      <a href="account.html" class="top-bar-item">
+        <i class="fas fa-user-circle"></i>
+        <span>Sign In / Register</span>
+      </a>
+
+      <form class="search-form" action="search.html" method="GET">
+        <i class="fas fa-search"></i>
+        <input type="search" name="q" class="search-input" placeholder="Search for products..." aria-label="Search"
+          autocomplete="off">
+      </form>
+    </div>
+  </div>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-text">
+          <div>
+            <span class="logo-sci">Scie</span><span class="logo-natu">Natu</span>
+          </div>
+          <div class="logo-tagline">The AECI Marketplace</div>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li class="dropdown">
+            <a href="marketplace.html" class="nav-link active"><i class="fas fa-shopping-bag"></i> Shopping <i
+                class="fas fa-caret-down" style="margin-left: 4px; font-size: 0.6em;"></i></a>
+            <ul class="dropdown-content">
+
+              <!-- 1. Building Materials -->
+              <li class="dropdown-submenu">
+                <a href="building-materials.html">Building Materials</a>
+                <ul class="dropdown-menu">
+                  <li><a href="lumber.html">Lumber</a></li>
+                  <li><a href="decking.html">Decking</a></li>
+                  <li><a href="fencing.html">Fencing</a></li>
+                  <li><a href="flooring.html">Flooring</a></li>
+                  <li><a href="windows.html">Windows</a></li>
+                  <li><a href="doors.html">Doors</a></li>
+                  <li><a href="paint.html">Paint</a></li>
+                  <li><a href="hardware.html">Hardware</a></li>
+                </ul>
+              </li>
+
+              <!-- 2. Tools & Systems -->
+              <li class="dropdown-submenu">
+                <a href="tools-systems.html">Tools & Systems</a>
+                <ul class="dropdown-menu">
+                  <li><a href="tools.html">Tools</a></li>
+                  <li><a href="outdoor-power.html">Outdoor Power Equipment</a></li>
+                  <li><a href="electrical.html">Electrical</a></li>
+                  <li><a href="heating-hvac.html">Heating & HVAC</a></li>
+                </ul>
+              </li>
+
+              <!-- 3. Kitchen, Bath & More -->
+              <li class="dropdown-submenu">
+                <a href="kitchen-bath.html">Kitchen & Bath</a>
+                <ul class="dropdown-menu">
+                  <li><a href="kitchen.html">Kitchen</a></li>
+                  <li><a href="bath.html">Bath</a></li>
+                  <li><a href="plumbing.html">Plumbing</a></li>
+                  <li><a href="appliances.html">Appliances</a></li>
+                  <li><a href="lighting.html">Lighting & Ceiling Fans</a></li>
+                </ul>
+              </li>
+
+              <!-- 4. Home & Decor -->
+              <li class="dropdown-submenu">
+                <a href="home-decor.html">Home & Decor</a>
+                <ul class="dropdown-menu">
+                  <li><a href="furniture-home.html">Furniture & Home</a></li>
+                  <li><a href="window-treatments.html">Window Treatments</a></li>
+                  <li><a href="storage.html">Storage & Organization</a></li>
+                  <li><a href="clothing.html">Clothing</a></li>
+                </ul>
+              </li>
+
+              <!-- 5. Outdoor Living -->
+              <li class="dropdown-submenu">
+                <a href="outdoor-living.html">Outdoor Living</a>
+                <ul class="dropdown-menu">
+                  <li><a href="outdoors.html">Outdoors</a></li>
+                  <li><a href="patio-furniture.html">Patio Furniture</a></li>
+                </ul>
+              </li>
+
+              <li><a href="sale.html" style="color: var(--patriot-red); font-weight: bold;">Sale Items</a></li>
+            </ul>
+          </li>
+          <li><a href="vendor.html" class="nav-link"><i class="fas fa-store"></i> Selling</a></li>
+          <li><a href="deals.html" class="nav-link"><i class="fas fa-tag"></i> Daily Deals</a></li>
+          <li class="dropdown">
+            <a href="brands.html" class="nav-link"><i class="fas fa-star"></i> Top Brands <i class="fas fa-caret-down"
+                style="margin-left: 4px; font-size: 0.6em;"></i></a>
+            <ul class="dropdown-content">
+              <li><a href="#">Example Brand #1</a></li>
+              <li><a href="#">Example Brand #2</a></li>
+              <li><a href="#">Example Brand #3</a></li>
+              <li><a href="#">Example Brand #4</a></li>
+              <li><a href="#">Example Brand #5</a></li>
+              <li><a href="#">Example Brand #6</a></li>
+            </ul>
+          </li>
+          <li><a href="reviews.html" class="nav-link"><i class="fas fa-comments"></i> Customer Reviews</a></li>
+          <li><a href="diy-guide.html" class="nav-link" style="color: white; font-weight: 700;"><i
+                class="fas fa-tools"></i> DIY Guide</a></li>
+          <li><a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i> View Cart</a></li>
+          <li><a href="support.html" class="nav-link"><i class="fas fa-question-circle"></i> Help & Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- REVIEWS HERO -->
+  <section
+    style="background: linear-gradient(135deg, var(--navy-blue) 0%, var(--patriot-red) 100%); padding: var(--space-3xl) 0; text-align: center;">
+    <div class="container">
+      <h1 style="font-size: 3.5rem; margin-bottom: var(--space-md); font-weight: 800; color: white;">Client Success
+        Stories</h1>
+      <p style="font-size: 1.5rem; color: white; max-width: 700px; margin: 0 auto; line-height: 1.6;">
+        Trusted by leading architects, builders, and homeowners across the nation.
+      </p>
+    </div>
+  </section>
+
+  <!-- REVIEWS STATISTICS -->
+  <section
+    style="background: white; padding: var(--space-xl) 0; box-shadow: 0 4px 20px rgba(0,0,0,0.05); position: relative; z-index: 10;">
+    <div class="container">
+      <div class="grid grid-4" style="text-align: center;">
+        <div>
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--patriot-red);">50k+</div>
+          <div style="color: #666; font-weight: 500;">Active Buyers</div>
+        </div>
+        <div>
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--navy-blue);">15k+</div>
+          <div style="color: #666; font-weight: 500;">Verified Vendors</div>
+        </div>
+        <div>
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--patriot-red);">4.9/5</div>
+          <div style="color: #666; font-weight: 500;">Average Rating</div>
+        </div>
+        <div>
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--navy-blue);">24/7</div>
+          <div style="color: #666; font-weight: 500;">Support Available</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS GRID -->
+  <section class="section bg-offwhite">
+    <div class="container">
+      <h2 class="text-center mb-xl">What People Are Saying</h2>
+
+      <div class="grid grid-3" style="gap: 30px;">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">"ScieNatu Marketplace revolutionized how we source materials. The bulk pricing on
+            lumber saved us over 15% on our last commercial project. Highly recommended!"</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar" style="background: var(--navy-blue);">MJ</div>
+            <div>
+              <p class="reviewer-name">Michael Jenkins</p>
+              <p class="reviewer-title">Project Manager, Apex Construction</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">"I found the perfect vintage-style lighting for my client's cafe renovation. The 'Home
+            Decor' section is a treasure trove of unique, high-quality items."</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar" style="background: var(--patriot-red);">SL</div>
+            <div>
+              <p class="reviewer-name">Sarah Lewis</p>
+              <p class="reviewer-title">Interior Designer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="review-text">"As a DIY enthusiast, I appreciate the access to professional-grade tools. Shipping was
+            fast, and the customer support team helped me choose the right equipment."</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar" style="background: #333);">DK</div>
+            <div>
+              <p class="reviewer-name">David Kim</p>
+              <p class="reviewer-title">Homeowner, VA</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">"We've been selling on ScieNatu for a year now. The vendor platform is intuitive, and
+            we've reached so many new customers in the mid-Atlantic region."</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar" style="background: var(--gold);">TS</div>
+            <div>
+              <p class="reviewer-name">Tom Stevens</p>
+              <p class="reviewer-title">Owner, Stevens Hardware</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="review-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">"The heavy machinery marketplace is seamless. Verified sellers and transparent pricing
+            made purchasing our new excavator stress-free."</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar" style="background: #555);">BR</div>
+            <div>
+              <p class="reviewer-name">Bill Robinson</p>
+              <p class="reviewer-title">Site Foreman</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="review-card">
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">"Excellent selection of eco-friendly insulation materials. Glad to see a marketplace
+            prioritizing sustainable building solutions."</p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar" style="background: #2ecc71);">EG</div>
+            <div>
+              <p class="reviewer-name">Elena Garcia</p>
+              <p class="reviewer-title">Green Building Consultant</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-2xl">
+        <a href="#" class="btn btn-primary btn-lg">Leave a Review</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 ScieNatu Global Technologies. All rights reserved. | The AECI Marketplace 🇺🇸</p>
+      </div>
+    </div>
+  </footer>
+          <!-- CHATBOT -->
+  <div class="chatbot-container" id="chatbot-container">
+    <div class="chatbot-header">
+      <div class="chatbot-title">
+        <span style="color: var(--patriot-red); font-weight: 800;">Scie</span><span style="color: var(--navy-blue); font-weight: 800;">Natu</span> <span style="color: #888; font-weight: 400;">Team</span>
+      </div>
+      <div class="chatbot-header-actions">
+        <div class="chatbot-menu-container">
+          <button class="chatbot-menu-toggle" id="chatbot-menu-toggle" aria-label="Chat menu">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <div class="chatbot-menu" id="chatbot-menu">
+            <button id="chatbot-opt-survey">Begin Survey</button>
+            <button id="chatbot-opt-resume">Resume Chat</button>
+            <button id="chatbot-opt-reset">Close & Reset Chat</button>
+          </div>
+        </div>
+        <button class="chatbot-close" id="chatbot-close" aria-label="Close chat"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages">
+      <!-- Messages will appear here -->
+    </div>
+    <div class="chatbot-input-area">
+      <input type="text" id="chatbot-input" placeholder="Type a message..." aria-label="Chat input">
+      <button id="chatbot-send" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+    </div>
+    <div class="chatbot-footer">
+      <a href="tel:555-555-5555" class="chatbot-call-btn"><i class="fas fa-phone-alt"></i> Call Us Directly</a>
+    </div>
+  </div>
+
+  <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Open chat">
+    <i class="fas fa-comment-dots"></i>
+  </button>
+  <!-- /CHATBOT -->
+  <script src="scripts.js"></script>`r`n  <script src="chatbot-ai.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,717 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="ScieNatu Marketplace - The World's Premier AECI Marketplace. Buy and sell architecture, engineering, construction, and infrastructure products.">
+  <title>ScieNatu | The AECI Marketplace</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- TOP BAR (Phone, Account, Search) -->
+  <div class="top-bar">
+    <div class="top-bar-container">
+      <a href="tel:555-555-5555" class="top-bar-item">
+        <i class="fas fa-headset"></i>
+        <span>Support: 555-555-5555</span>
+      </a>
+
+      <a href="vendor.html" class="top-bar-item">
+        <i class="fas fa-store"></i>
+        <span>Sell on ScieNatu</span>
+      </a>
+
+      <a href="account.html" class="top-bar-item">
+        <i class="fas fa-user-circle"></i>
+        <span>Sign In / Register</span>
+      </a>
+
+      <form class="search-form" action="search.html" method="GET">
+        <i class="fas fa-search"></i>
+        <input type="search" name="q" class="search-input" placeholder="Search for products..." aria-label="Search"
+          autocomplete="off">
+      </form>
+    </div>
+  </div>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-text">
+          <div>
+            <span class="logo-sci">Scie</span><span class="logo-natu">Natu</span>
+          </div>
+          <div class="logo-tagline">The AECI Marketplace</div>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li class="dropdown">
+            <a href="marketplace.html" class="nav-link active"><i class="fas fa-shopping-bag"></i> Shopping <i
+                class="fas fa-caret-down" style="margin-left: 4px; font-size: 0.6em;"></i></a>
+            <ul class="dropdown-content">
+
+              <!-- 1. Building Materials -->
+              <li class="dropdown-submenu">
+                <a href="building-materials.html">Building Materials</a>
+                <ul class="dropdown-menu">
+                  <li><a href="lumber.html">Lumber</a></li>
+                  <li><a href="decking.html">Decking</a></li>
+                  <li><a href="fencing.html">Fencing</a></li>
+                  <li><a href="flooring.html">Flooring</a></li>
+                  <li><a href="windows.html">Windows</a></li>
+                  <li><a href="doors.html">Doors</a></li>
+                  <li><a href="paint.html">Paint</a></li>
+                  <li><a href="hardware.html">Hardware</a></li>
+                </ul>
+              </li>
+
+              <!-- 2. Tools & Systems -->
+              <li class="dropdown-submenu">
+                <a href="tools-systems.html">Tools & Systems</a>
+                <ul class="dropdown-menu">
+                  <li><a href="tools.html">Tools</a></li>
+                  <li><a href="outdoor-power.html">Outdoor Power Equipment</a></li>
+                  <li><a href="electrical.html">Electrical</a></li>
+                  <li><a href="heating-hvac.html">Heating & HVAC</a></li>
+                </ul>
+              </li>
+
+              <!-- 3. Kitchen, Bath & More -->
+              <li class="dropdown-submenu">
+                <a href="kitchen-bath.html">Kitchen & Bath</a>
+                <ul class="dropdown-menu">
+                  <li><a href="kitchen.html">Kitchen</a></li>
+                  <li><a href="bath.html">Bath</a></li>
+                  <li><a href="plumbing.html">Plumbing</a></li>
+                  <li><a href="appliances.html">Appliances</a></li>
+                  <li><a href="lighting.html">Lighting & Ceiling Fans</a></li>
+                </ul>
+              </li>
+
+              <!-- 4. Home & Decor -->
+              <li class="dropdown-submenu">
+                <a href="home-decor.html">Home & Decor</a>
+                <ul class="dropdown-menu">
+                  <li><a href="furniture-home.html">Furniture & Home</a></li>
+                  <li><a href="window-treatments.html">Window Treatments</a></li>
+                  <li><a href="storage.html">Storage & Organization</a></li>
+                  <li><a href="clothing.html">Clothing</a></li>
+                </ul>
+              </li>
+
+              <!-- 5. Outdoor Living -->
+              <li class="dropdown-submenu">
+                <a href="outdoor-living.html">Outdoor Living</a>
+                <ul class="dropdown-menu">
+                  <li><a href="outdoors.html">Outdoors</a></li>
+                  <li><a href="patio-furniture.html">Patio Furniture</a></li>
+                </ul>
+              </li>
+
+              <li><a href="sale.html" style="color: var(--patriot-red); font-weight: bold;">Sale Items</a></li>
+            </ul>
+          </li>
+          <li><a href="vendor.html" class="nav-link"><i class="fas fa-store"></i> Selling</a></li>
+          <li><a href="deals.html" class="nav-link"><i class="fas fa-tag"></i> Daily Deals</a></li>
+          <li class="dropdown">
+            <a href="brands.html" class="nav-link"><i class="fas fa-star"></i> Top Brands <i class="fas fa-caret-down"
+                style="margin-left: 4px; font-size: 0.6em;"></i></a>
+            <ul class="dropdown-content">
+              <li><a href="#">Example Brand #1</a></li>
+              <li><a href="#">Example Brand #2</a></li>
+              <li><a href="#">Example Brand #3</a></li>
+              <li><a href="#">Example Brand #4</a></li>
+              <li><a href="#">Example Brand #5</a></li>
+              <li><a href="#">Example Brand #6</a></li>
+            </ul>
+          </li>
+          <li><a href="reviews.html" class="nav-link"><i class="fas fa-comments"></i> Customer Reviews</a></li>
+          <li><a href="diy-guide.html" class="nav-link" style="color: white; font-weight: 700;"><i
+                class="fas fa-tools"></i> DIY Guide</a></li>
+          <li><a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i> View Cart</a></li>
+          <li><a href="support.html" class="nav-link"><i class="fas fa-question-circle"></i> Help & Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <!-- Marketplace Hero Slide -->
+    <div class="hero-slide active" style="background-image: url('images/hero_industrial.png')">
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">
+        The World's <span class="highlight-red">AECI</span><br>
+        <span class="highlight-blue">Marketplace</span>
+      </h1>
+      <p class="hero-subtitle">
+        Buy and Sell Architecture, Engineering, Construction, and Infrastructure Products.
+      </p>
+
+      <div
+        style="background: rgba(255,255,255,0.95); padding: 20px; border-radius: 8px; display: inline-block; width: 100%; max-width: 600px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+        <form action="search.html" method="GET" class="search-form" style="display: flex; gap: 10px;">
+          <input type="text" name="q" class="search-input" placeholder="What are you looking for?" autocomplete="off"
+            aria-label="Search"
+            style="flex: 1; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; color: #333;">
+          <button type="submit" class="btn btn-primary" style="padding: 12px 24px;">Search</button>
+        </form>
+      </div>
+
+      <div class="hero-cta" style="margin-top: 30px;">
+        <a href="marketplace.html" class="btn btn-primary btn-lg">Shop All Products</a>
+        <a href="vendor.html" class="btn btn-white btn-lg">Start Selling</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES GRID -->
+  <section class="section bg-offwhite">
+    <div class="container">
+      <h2 class="text-center mb-xl">Browse by <span class="text-blue">Category</span></h2>
+
+      <div class="grid" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px;">
+        <!-- 1. Building Materials -->
+        <a href="building-materials.html" class="card" style="text-decoration: none; transition: transform 0.2s;">
+          <div class="card-content" style="text-align: center; padding: 1.5rem 1rem;">
+            <i class="fas fa-hammer"
+              style="font-size: 2.5rem; color: var(--patriot-red); margin-bottom: var(--space-md);"></i>
+            <h3 class="card-title" style="font-size: 1.1rem;">Building Materials</h3>
+            <p class="card-text" style="font-size: 0.9rem;">Lumber, concrete, & steel</p>
+          </div>
+        </a>
+
+        <!-- 2. Tools & Systems -->
+        <a href="tools-systems.html" class="card" style="text-decoration: none; transition: transform 0.2s;">
+          <div class="card-content" style="text-align: center; padding: 1.5rem 1rem;">
+            <i class="fas fa-tools"
+              style="font-size: 2.5rem; color: var(--navy-blue); margin-bottom: var(--space-md);"></i>
+            <h3 class="card-title" style="font-size: 1.1rem;">Tools & Systems</h3>
+            <p class="card-text" style="font-size: 0.9rem;">Power tools, HVAC, & electrical</p>
+          </div>
+        </a>
+
+        <!-- 3. Kitchen & Bath -->
+        <a href="kitchen-bath.html" class="card" style="text-decoration: none; transition: transform 0.2s;">
+          <div class="card-content" style="text-align: center; padding: 1.5rem 1rem;">
+            <i class="fas fa-bath"
+              style="font-size: 2.5rem; color: var(--patriot-red); margin-bottom: var(--space-md);"></i>
+            <h3 class="card-title" style="font-size: 1.1rem;">Kitchen & Bath</h3>
+            <p class="card-text" style="font-size: 0.9rem;">Plumbing, lighting, & appliances</p>
+          </div>
+        </a>
+
+        <!-- 4. Home & Decor -->
+        <a href="home-decor.html" class="card" style="text-decoration: none; transition: transform 0.2s;">
+          <div class="card-content" style="text-align: center; padding: 1.5rem 1rem;">
+            <i class="fas fa-couch"
+              style="font-size: 2.5rem; color: var(--navy-blue); margin-bottom: var(--space-md);"></i>
+            <h3 class="card-title" style="font-size: 1.1rem;">Home & Decor</h3>
+            <p class="card-text" style="font-size: 0.9rem;">Furniture, storage, & window treatments</p>
+          </div>
+        </a>
+
+        <!-- 5. Outdoor Living -->
+        <a href="outdoor-living.html" class="card" style="text-decoration: none; transition: transform 0.2s;">
+          <div class="card-content" style="text-align: center; padding: 1.5rem 1rem;">
+            <i class="fas fa-tree"
+              style="font-size: 2.5rem; color: var(--patriot-red); margin-bottom: var(--space-md);"></i>
+            <h3 class="card-title" style="font-size: 1.1rem;">Outdoor Living</h3>
+            <p class="card-text" style="font-size: 0.9rem;">Decking, patio, & landscaping</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="section bg-white">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-xl);">
+        <h2 class="mb-0">Featured <span class="text-red">Products</span></h2>
+        <a href="marketplace.html" style="font-weight: 600; color: var(--navy-blue);">See All Products <i
+            class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="grid grid-4"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+        <!-- Product 1 -->
+        <div class="card">
+          <img
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect fill='%23eee' width='400' height='300'/><text x='200' y='150' font-size='20' fill='%23aaa' text-anchor='middle' dominant-baseline='middle'>Oak Flooring</text></svg>"
+            class="card-image" alt="Premium Hardwood">
+          <div class="card-content">
+            <span class="card-tag">Material</span>
+            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">Premium Oak Hardwood</h4>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+              <span style="font-weight: 700; color: var(--patriot-red); font-size: 1.2rem;">$8.99/sq ft</span>
+              <small>By: TimberCo</small>
+            </div>
+            <button class="btn btn-primary btn-sm" style="width: 100%; margin-top: 15px;">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="card">
+          <img
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect fill='%23eee' width='400' height='300'/><text x='200' y='150' font-size='20' fill='%23aaa' text-anchor='middle' dominant-baseline='middle'>LED Fixture</text></svg>"
+            class="card-image" alt="LED Lighting">
+          <div class="card-content">
+            <span class="card-tag blue">Decor</span>
+            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">Modern LED Fixture</h4>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+              <span style="font-weight: 700; color: var(--navy-blue); font-size: 1.2rem;">$249.99</span>
+              <small>By: BrightTech</small>
+            </div>
+            <button class="btn btn-primary btn-sm" style="width: 100%; margin-top: 15px;">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="card">
+          <img
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect fill='%23eee' width='400' height='300'/><text x='200' y='150' font-size='20' fill='%23aaa' text-anchor='middle' dominant-baseline='middle'>Smart Thermostat</text></svg>"
+            class="card-image" alt="HVAC System">
+          <div class="card-content">
+            <span class="card-tag">Appliances</span>
+            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">Smart Thermostat Ultra</h4>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+              <span style="font-weight: 700; color: var(--patriot-red); font-size: 1.2rem;">$129.99</span>
+              <small>By: ClimatePro</small>
+            </div>
+            <button class="btn btn-primary btn-sm" style="width: 100%; margin-top: 15px;">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="card">
+          <img
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect fill='%23eee' width='400' height='300'/><text x='200' y='150' font-size='20' fill='%23aaa' text-anchor='middle' dominant-baseline='middle'>Power Drill</text></svg>"
+            class="card-image" alt="Granite Countertop">
+          <div class="card-content">
+            <span class="card-tag blue">Tool</span>
+            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">Pro-Grade Hammer Drill</h4>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+              <span style="font-weight: 700; color: var(--navy-blue); font-size: 1.2rem;">$189.00</span>
+              <small>By: ToolMaster</small>
+            </div>
+            <button class="btn btn-primary btn-sm" style="width: 100%; margin-top: 15px;">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW ARRIVALS -->
+  <section class="section bg-offwhite">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-xl);">
+        <h2 class="mb-0">New <span class="text-blue">Arrivals</span></h2>
+        <a href="marketplace.html" style="font-weight: 600; color: var(--navy-blue);">View New Inventory <i
+            class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="grid grid-4"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+        <!-- Product 5 -->
+        <div class="card">
+          <img
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect fill='%23eee' width='400' height='300'/><text x='200' y='150' font-size='20' fill='%23aaa' text-anchor='middle' dominant-baseline='middle'>Patio Set</text></svg>"
+            class="card-image" alt="Patio Set">
+          <div class="card-content">
+            <span class="card-tag">Living</span>
+            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">Modern Teak Patio Set</h4>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+              <span style="font-weight: 700; color: var(--navy-blue); font-size: 1.2rem;">$899.00</span>
+              <small>By: OutdoorZen</small>
+            </div>
+            <button class="btn btn-primary btn-sm" style="width: 100%; margin-top: 15px;">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="card">
+          <img
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect fill='%23eee' width='400' height='300'/><text x='200' y='150' font-size='20' fill='%23aaa' text-anchor='middle' dominant-baseline='middle'>Solar Gen</text></svg>"
+            class="card-image" alt="Solar Generator">
+          <div class="card-content">
+            <span class="card-tag blue">Power</span>
+            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">2000W Solar Generator</h4>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+              <span style="font-weight: 700; color: var(--patriot-red); font-size: 1.2rem;">$1,299.00</span>
+              <small>By: SunPower</small>
+            </div>
+            <button class="btn btn-primary btn-sm" style="width: 100%; margin-top: 15px;">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="card">
+          <img
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect fill='%23eee' width='400' height='300'/><text x='200' y='150' font-size='20' fill='%23aaa' text-anchor='middle' dominant-baseline='middle'>Compressor</text></svg>"
+            class="card-image" alt="Air Compressor">
+          <div class="card-content">
+            <span class="card-tag">Tools</span>
+            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">20G Air Compressor</h4>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+              <span style="font-weight: 700; color: var(--navy-blue); font-size: 1.2rem;">$349.50</span>
+              <small>By: AirForce</small>
+            </div>
+            <button class="btn btn-primary btn-sm" style="width: 100%; margin-top: 15px;">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="card">
+          <img
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect fill='%23eee' width='400' height='300'/><text x='200' y='150' font-size='20' fill='%23aaa' text-anchor='middle' dominant-baseline='middle'>Smart Lock</text></svg>"
+            class="card-image" alt="Smart Lock">
+          <div class="card-content">
+            <span class="card-tag blue">Tech</span>
+            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">Biometric Smart Lock</h4>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+              <span style="font-weight: 700; color: var(--patriot-red); font-size: 1.2rem;">$219.00</span>
+              <small>By: SecureHome</small>
+            </div>
+            <button class="btn btn-primary btn-sm" style="width: 100%; margin-top: 15px;">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRENDING NOW -->
+  <section class="section bg-white">
+    <div class="container">
+      <h2 class="text-center mb-xl">Trending <span class="text-red">Now</span></h2>
+      <div class="grid grid-3"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+
+        <!-- Trending 1 -->
+        <div class="card" style="border: 2px solid var(--gold); position: relative;">
+          <div
+            style="position: absolute; top: 10px; right: 10px; background: var(--gold); color: black; padding: 4px 10px; font-weight: bold; border-radius: 4px;">
+            #1 Best Seller</div>
+          <img
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect fill='%23eee' width='400' height='300'/><text x='200' y='150' font-size='20' fill='%23aaa' text-anchor='middle' dominant-baseline='middle'>Lumber Pack</text></svg>"
+            class="card-image" alt="Lumber">
+          <div class="card-content">
+            <h4 style="font-size: 1.3rem;">Contractor Lumber Pack</h4>
+            <p>Premium kiln-dried studs. Bulk pricing available.</p>
+            <p style="font-weight: 700; color: var(--patriot-red); font-size: 1.5rem; margin: 10px 0;">$450.00 / pallet
+            </p>
+            <button class="btn btn-primary" style="width: 100%;">View Deal</button>
+          </div>
+        </div>
+
+        <!-- Trending 2 -->
+        <div class="card">
+          <img
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect fill='%23eee' width='400' height='300'/><text x='200' y='150' font-size='20' fill='%23aaa' text-anchor='middle' dominant-baseline='middle'>Generator</text></svg>"
+            class="card-image" alt="Generator">
+          <div class="card-content">
+            <h4 style="font-size: 1.2rem;">Backup Generator</h4>
+            <p>Keep your site running. 7500W output.</p>
+            <p style="font-weight: 700; color: var(--navy-blue); font-size: 1.4rem; margin: 10px 0;">$950.00</p>
+            <button class="btn btn-outline-blue" style="width: 100%;">View Details</button>
+          </div>
+        </div>
+
+        <!-- Trending 3 -->
+        <div class="card">
+          <img
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect fill='%23eee' width='400' height='300'/><text x='200' y='150' font-size='20' fill='%23aaa' text-anchor='middle' dominant-baseline='middle'>Insulation</text></svg>"
+            class="card-image" alt="Insulation">
+          <div class="card-content">
+            <h4 style="font-size: 1.2rem;">R-19 Insulation Rolls</h4>
+            <p>Energy efficient fiberglass. Easy install.</p>
+            <p style="font-weight: 700; color: var(--navy-blue); font-size: 1.4rem; margin: 10px 0;">$45.00 / roll</p>
+            <button class="btn btn-outline-blue" style="width: 100%;">View Details</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BUYING IN BULK -->
+  <section class="section bg-offwhite">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-xl);">
+        <div>
+          <h2 class="mb-0">Buy in <span class="text-red">Bulk</span> & Save</h2>
+          <p class="text-grey" style="margin-top: 5px;">Commercial pricing for contractors and large projects.</p>
+        </div>
+        <a href="bulk-deals.html" class="btn btn-outline-blue">View All Bulk Deals</a>
+      </div>
+
+      <div class="grid grid-2" style="gap: 30px;">
+        <!-- Bulk Item 1 -->
+        <div class="card"
+          style="display: flex; flex-direction: row; align-items: center; padding: 20px; border-left: 5px solid var(--patriot-red);">
+          <img
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150'><rect fill='%23ddd' width='150' height='150'/><text x='75' y='75' font-size='16' fill='%23888' text-anchor='middle' dominant-baseline='middle'>Roof Tiles</text></svg>"
+            alt="Roof Tiles"
+            style="width: 120px; height: 120px; object-fit: cover; border-radius: 4px; margin-right: 20px;">
+          <div style="flex: 1;">
+            <div
+              style="font-size: 0.8rem; text-transform: uppercase; font-weight: 700; color: var(--patriot-red); letter-spacing: 1px;">
+              Volume Savings</div>
+            <h3 style="margin: 5px 0;">Pallet of Asphalt Shingles</h3>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;">50 Bundles / Pallet. Free Jobsite Delivery.
+            </p>
+            <div style="display: flex; align-items: baseline; gap: 10px;">
+              <span style="font-size: 1.4rem; font-weight: 700;">$1,450.00</span>
+              <span style="text-decoration: line-through; color: #999;">$1,800.00</span>
+            </div>
+          </div>
+          <a href="bulk-deals.html" class="btn btn-primary">Add to Order</a>
+        </div>
+
+        <!-- Bulk Item 2 -->
+        <div class="card"
+          style="display: flex; flex-direction: row; align-items: center; padding: 20px; border-left: 5px solid var(--navy-blue);">
+          <img
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150'><rect fill='%23ddd' width='150' height='150'/><text x='75' y='75' font-size='16' fill='%23888' text-anchor='middle' dominant-baseline='middle'>Drywall</text></svg>"
+            alt="Drywall"
+            style="width: 120px; height: 120px; object-fit: cover; border-radius: 4px; margin-right: 20px;">
+          <div style="flex: 1;">
+            <div
+              style="font-size: 0.8rem; text-transform: uppercase; font-weight: 700; color: var(--navy-blue); letter-spacing: 1px;">
+              Contractor Exclusive</div>
+            <h3 style="margin: 5px 0;">Professional Drywall Bundle</h3>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;">30 Sheets (4x8x1/2"). Moisture Resistant.
+            </p>
+            <div style="display: flex; align-items: baseline; gap: 10px;">
+              <span style="font-size: 1.4rem; font-weight: 700;">$420.00</span>
+              <span style="text-decoration: line-through; color: #999;">$550.00</span>
+            </div>
+          </div>
+          <a href="bulk-deals.html" class="btn btn-primary">Add to Order</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT STARTER KITS -->
+  <section class="section bg-white">
+    <div class="container">
+      <h2 class="text-center mb-xl">Project <span class="text-blue">Starter Kits</span></h2>
+      <div class="grid grid-3" style="gap: 30px;">
+
+        <!-- Kit 1 -->
+        <div class="card" style="text-align: center; padding-bottom: 20px;">
+          <div style="background: var(--navy-blue); color: white; padding: 10px; font-weight: bold;">Weekend Warrior
+            Deck</div>
+          <img
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='250'><rect fill='%23eee' width='400' height='250'/><text x='200' y='125' font-size='20' fill='%23aaa' text-anchor='middle' dominant-baseline='middle'>Deck Kit</text></svg>"
+            class="card-image" alt="Deck Kit" style="height: 200px;">
+          <div class="card-content">
+            <ul style="text-align: left; margin: 0 auto 20px; display: inline-block; color: #555;">
+              <li><i class="fas fa-check text-green" style="margin-right: 8px;"></i>Rank A Pressure Treated Lumber</li>
+              <li><i class="fas fa-check text-green" style="margin-right: 8px;"></i>5lb Box of Deck Screws</li>
+              <li><i class="fas fa-check text-green" style="margin-right: 8px;"></i>Premium Wood Stain (5gal)</li>
+            </ul>
+            <div style="font-size: 1.5rem; font-weight: 800; color: var(--navy-blue); margin-bottom: 10px;">$599.00
+            </div>
+            <a href="kit-deck.html" class="btn btn-outline-blue">View Bundle</a>
+          </div>
+        </div>
+
+        <!-- Kit 2 -->
+        <div class="card" style="text-align: center; padding-bottom: 20px;">
+          <div style="background: var(--patriot-red); color: white; padding: 10px; font-weight: bold;">Smart Home
+            Security</div>
+          <img
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='250'><rect fill='%23eee' width='400' height='250'/><text x='200' y='125' font-size='20' fill='%23aaa' text-anchor='middle' dominant-baseline='middle'>Smart Kit</text></svg>"
+            class="card-image" alt="Security Kit" style="height: 200px;">
+          <div class="card-content">
+            <ul style="text-align: left; margin: 0 auto 20px; display: inline-block; color: #555;">
+              <li><i class="fas fa-check text-green" style="margin-right: 8px;"></i>Video Doorbell Pro</li>
+              <li><i class="fas fa-check text-green" style="margin-right: 8px;"></i>2x Outdoor Floodlight Cams</li>
+              <li><i class="fas fa-check text-green" style="margin-right: 8px;"></i>Smart Deadbolt Lock</li>
+            </ul>
+            <div style="font-size: 1.5rem; font-weight: 800; color: var(--patriot-red); margin-bottom: 10px;">$449.00
+            </div>
+            <a href="kit-security.html" class="btn btn-outline-blue">View Bundle</a>
+          </div>
+        </div>
+
+        <!-- Kit 3 -->
+        <div class="card" style="text-align: center; padding-bottom: 20px;">
+          <div style="background: var(--gold); color: black; padding: 10px; font-weight: bold;">Spring Garden Prep</div>
+          <img
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='250'><rect fill='%23eee' width='400' height='250'/><text x='200' y='125' font-size='20' fill='%23aaa' text-anchor='middle' dominant-baseline='middle'>Garden Kit</text></svg>"
+            class="card-image" alt="Garden Kit" style="height: 200px;">
+          <div class="card-content">
+            <ul style="text-align: left; margin: 0 auto 20px; display: inline-block; color: #555;">
+              <li><i class="fas fa-check text-green" style="margin-right: 8px;"></i>Raised Bed Planter Box</li>
+              <li><i class="fas fa-check text-green" style="margin-right: 8px;"></i>Organic Potting Mix (x4)</li>
+              <li><i class="fas fa-check text-green" style="margin-right: 8px;"></i>Ergonomic Tool Set</li>
+            </ul>
+            <div style="font-size: 1.5rem; font-weight: 800; color: var(--navy-blue); margin-bottom: 10px;">$129.99
+            </div>
+            <a href="kit-garden.html" class="btn btn-outline-blue">View Bundle</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SELL ON SCIENATU -->
+  <section class="section bg-navy">
+    <div class="container">
+      <div class="grid grid-2" style="align-items: center; gap: var(--space-2xl);">
+        <div>
+          <span
+            style="background: var(--gold); color: var(--strike-black); padding: 4px 12px; border-radius: 4px; font-weight: 700; text-transform: uppercase; font-size: 0.8rem;">Vendor
+            Portal</span>
+          <h2 class="text-white mt-md">Turn Your Inventory Into Cash</h2>
+          <p class="text-white" style="font-size: 1.125rem;">
+            Reach thousands of contractors, architects, and homeowners. It's free to list your first 50 items.
+          </p>
+          <ul style="color: var(--silver-light); list-style: none; margin-bottom: var(--space-lg);">
+            <li style="margin-bottom: 10px;"><i class="fas fa-check"
+                style="color: var(--success); margin-right: 10px;"></i> Low Selling Fees</li>
+            <li style="margin-bottom: 10px;"><i class="fas fa-check"
+                style="color: var(--success); margin-right: 10px;"></i> Instant Access to Professionals</li>
+            <li style="margin-bottom: 10px;"><i class="fas fa-check"
+                style="color: var(--success); margin-right: 10px;"></i> Automated Shipping Labels</li>
+          </ul>
+          <a href="vendor.html" class="btn btn-primary">Start Selling Today</a>
+        </div>
+        <div style="text-align: center;">
+          <i class="fas fa-box-open" style="font-size: 120px; color: rgba(255,255,255,0.1);"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-column">
+          <h3>ScieNatu</h3>
+          <p style="color: var(--silver-light); margin-bottom: var(--space-md);">
+            The trusted marketplace for AECI professionals and homeowners.
+          </p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Shop</h3>
+          <div class="footer-links">
+            <a href="marketplace.html" class="footer-link">Building Materials</a>
+            <a href="marketplace.html" class="footer-link">Home Decor</a>
+            <a href="marketplace.html" class="footer-link">Appliances</a>
+            <a href="marketplace.html" class="footer-link">Tools</a>
+            <a href="deals.html" class="footer-link">Deals</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Sell</h3>
+          <div class="footer-links">
+            <a href="vendor.html" class="footer-link">Start Selling</a>
+            <a href="vendor.html" class="footer-link">Seller Handbook</a>
+            <a href="vendor.html" class="footer-link">Success Stories</a>
+            <a href="vendor.html" class="footer-link">Affiliates</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Help</h3>
+          <div class="footer-links">
+            <a href="support.html" class="footer-link">Customer Service</a>
+            <a href="support.html" class="footer-link">Shipping & Returns</a>
+            <a href="support.html" class="footer-link">Privacy Policy</a>
+            <a href="support.html" class="footer-link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ScieNatu Global Technologies. All rights reserved. | The AECI Marketplace ðŸ‡ºðŸ‡¸</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+    <!-- CHATBOT -->
+  <div class="chatbot-container" id="chatbot-container">
+    <div class="chatbot-header">
+      <div class="chatbot-title">
+        <span style="color: var(--patriot-red); font-weight: 800;">Scie</span><span style="color: var(--navy-blue); font-weight: 800;">Natu</span> <span style="color: #888; font-weight: 400;">Team</span>
+      </div>
+      <div class="chatbot-header-actions">
+        <div class="chatbot-menu-container">
+          <button class="chatbot-menu-toggle" id="chatbot-menu-toggle" aria-label="Chat menu">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <div class="chatbot-menu" id="chatbot-menu">
+            <button id="chatbot-opt-survey">Begin Survey</button>
+            <button id="chatbot-opt-resume">Resume Chat</button>
+            <button id="chatbot-opt-reset">Close & Reset Chat</button>
+          </div>
+        </div>
+        <button class="chatbot-close" id="chatbot-close" aria-label="Close chat"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages">
+      <!-- Messages will appear here -->
+    </div>
+    <div class="chatbot-input-area">
+      <input type="text" id="chatbot-input" placeholder="Type a message..." aria-label="Chat input">
+      <button id="chatbot-send" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+    </div>
+    <div class="chatbot-footer">
+      <a href="tel:555-555-5555" class="chatbot-call-btn"><i class="fas fa-phone-alt"></i> Call Us Directly</a>
+    </div>
+  </div>
+
+  <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Open chat">
+    <i class="fas fa-comment-dots"></i>
+  </button>
+  <!-- /CHATBOT -->
+
+  <script src="scripts.js"></script>`r`n
+  <script src="chatbot-ai.js"></script>
+</body>
+
+</html>
