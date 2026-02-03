@@ -13,8 +13,8 @@ app.use(express.json());
 // Serve static files from the root directory
 app.use(express.static(path.join(__dirname, '../')));
 
-// Initialize Gemini AI
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+// Initialize Gemini AI (Moved to route handler for safety)
+// const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 // STORE CONVERSATION HISTORIES
 const conversations = new Map();
